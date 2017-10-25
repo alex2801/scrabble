@@ -14,10 +14,10 @@ $(document).ready(function() {
       var result = check(word);
       if (result) {
           $(".points").text(result);
-          $(":input").val("");
-          $("#result").show();
+          $(":input").val(""); // empty the form's values
+          $("#result").show(); // show #result
       } else {
-          $("#result").hide();
+          $("#result").hide(); // hide #result
           alert("Enter a word correctly in English, please!");
       }
 
